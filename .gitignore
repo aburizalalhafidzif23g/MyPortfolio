@@ -1,19 +1,15 @@
-# Node
-node_modules/
-npm-debug.log
-
 # OS
 .DS_Store
 Thumbs.db
 
+# Secrets and local config
+.env
+.env.*
+config.local.*
+
 # Logs
 *.log
 
-# Build
-dist/
-build/
-
 # IDE
 .vscode/
-*.suo
-*.user
+.idea/

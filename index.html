@@ -4,26 +4,27 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Abu Rizal Alhafidz | Backend Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Abu Rizal Alhafidz, a backend-focused web developer and university student in West Java, Indonesia. PHP, Laravel, MySQL, Git.">
+  <meta name="author" content="Abu Rizal Alhafidz">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abu Rizal Alhafidz | Backend Developer Portfolio">
+  <meta property="og:description" content="Backend-focused web developer and university student. PHP, Laravel, MySQL, Git.">
 
   <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -38,6 +39,7 @@
 </head>
 
 <body class="index-page">
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
@@ -52,7 +54,7 @@
       <nav id="navmenu" class="navmenu">
 
         <div class="profile-img">
-          <img src="assets/img/profile/abu.jpg" alt="profile">
+          <img src="assets/img/profile/abu.webp" alt="Abu Rizal Alhafidz">
         </div>
 
         <a href="index.html" class="logo d-flex align-items-center justify-content-center active">
@@ -62,18 +64,24 @@
         </a>
 
         <div class="social-links text-center">
-          <a href="https://twitter.com/aburizal4771" target="_blank"><i class="bi bi-twitter-x"></i></a>
-          <a href="https://www.linkedin.com/in/aburizalalhafidz" target="_blank"><i class="bi bi-linkedin"></i></a>
-          <a href="https://github.com/aburizalalhafidzif23g" target="_blank"><i class="bi bi-github"></i></a>
-          <a href="https://www.instagram.com/aburizal4771" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://twitter.com/aburizal4771" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/aburizalalhafidz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+          <a href="https://github.com/aburizalalhafidzif23g" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/aburizal4771" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en" class="active">EN</button>
+          <button type="button" data-lang="id">ID</button>
         </div>
 
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#resume">Resume</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
           <!---<li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -99,7 +107,7 @@
     </div>
   </header>
 
-  <main class="main">
+  <main id="main" class="main">
 
     <!-- Hero Section -->
     <section id="hero" class="hero section">
@@ -136,11 +144,10 @@
               </div>
 
               <div class="social-links" data-aos="fade-up" data-aos-delay="400">
-                <a href="https://twitter.com/aburizal4771" target="_blank"><i class="bi bi-twitter-x"></i></a>
-                <a href="https://www.linkedin.com/in/aburizalalhafidz" target="_blank"><i
-                    class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/aburizalalhafidzif23g" target="_blank"><i class="bi bi-github"></i></a>
-                <a href="https://www.instagram.com/aburizal4771" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://twitter.com/aburizal4771" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/aburizalalhafidz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+                <a href="https://github.com/aburizalalhafidzif23g" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/aburizal4771" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -161,7 +168,7 @@
                   <span>Creative Ideas</span>
                 </div>
               </div>
-              <img src="assets/img/profile/abu.jpg" alt="Portfolio Hero" class="img-fluid hero-main-image">
+              <img src="assets/img/profile/abu.webp" alt="Portrait of Abu Rizal Alhafidz" fetchpriority="high" class="img-fluid hero-main-image">
               <div class="image-overlay"></div>
             </div>
           </div>
@@ -187,10 +194,10 @@
           <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
             <div class="profile-image-wrapper">
               <div class="profile-image">
-                <img src="assets/img/profile/abu.jpg" alt="Profile" class="img-fluid">
+                <img src="assets/img/profile/abu.webp" alt="Abu Rizal Alhafidz" class="img-fluid">
               </div>
               <div class="signature-section">
-                <img src="assets/img/misc/signature_abu.png" alt="Signature" class="signature">
+                <img src="assets/img/misc/signature_abu.png" alt="Abu Rizal Alhafidz signature" class="signature">
                 <p class="quote">Building meaningful digital experiences through creative code.</p>
               </div>
             </div>
@@ -200,9 +207,7 @@
             <div class="about-content">
               <div class="intro">
                 <h2>Hi, I'm Abu Rizal Alhafidz - a Creative Developer</h2>
-                <p>I’m a fifth-semester student at Buana Perjuangan Karawang University, passionate about technology and
-                  web development. As a backend-focused developer, I enjoy building reliable, secure, and efficient
-                  systems that support great digital experiences.</p>
+                <p>I’m an Informatics Engineering student at Buana Perjuangan Karawang University (class of 2027), interested in technology and administration. I have built a data application during an internship and led student organizations, and I enjoy creating reliable, secure systems that support great digital experiences.</p>
               </div>
 
               <div class="skills-grid">
@@ -234,22 +239,30 @@
               <div class="journey-timeline" data-aos="fade-up" data-aos-delay="300">
                 <div class="timeline-item">
                   <div class="year">2020</div>
-                  <div class="description">Graduated with SMPI Fathanun Burhan</div>
+                  <div class="description">Graduated from SMPI Fathanul Burhan</div>
                 </div>
                 <div class="timeline-item">
                   <div class="year">2023</div>
-                  <div class="description">Graduated with MAS Fatahun Burhan</div>
+                  <div class="description">Graduated from MA Fathanul Burhan (Science track)</div>
                 </div>
                 <div class="timeline-item">
                   <div class="year">2023</div>
-                  <div class="description">Joining as a student at Buana Perjuangan Karawang University</div>
+                  <div class="description">Started Informatics Engineering at Buana Perjuangan Karawang University</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="year">2025</div>
+                  <div class="description">Internship at the Karawang Department of Agriculture and Food Security</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="year">2026</div>
+                  <div class="description">Became Head of Racana Council, UKM Pramuka</div>
                 </div>
               </div>
 
               <div class="cta-section" data-aos="fade-up" data-aos-delay="400">
                 <div class="action-buttons">
                   <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                  <a href="#" class="btn btn-outline">Download Resume</a>
+                  <a href="assets/files/CV_Abu_Rizal_Alhafidz.pdf" class="btn btn-outline" download>Download CV</a>
                 </div>
               </div>
 
@@ -264,6 +277,11 @@
 
     <!-- Skills Section -->
     <section id="skills" class="skills section">
+
+      <div class="container section-title">
+        <h2>Skills</h2>
+        <p>The tools and technologies I work with.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -396,49 +414,22 @@
 
           <div class="col-lg-4">
             <div class="skills-summary" data-aos="fade-left" data-aos-delay="200">
-              <h3>Professional Expertise</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam.</p>
-
-              <div class="summary-stats">
-                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="stat-circle">
-                    <i class="bi bi-trophy"></i>
-                  </div>
-                  <div class="stat-info">
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">Years Experience</span>
-                  </div>
-                </div>
-
-                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="stat-circle">
-                    <i class="bi bi-diagram-3"></i>
-                  </div>
-                  <div class="stat-info">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Projects Completed</span>
-                  </div>
-                </div>
-
-                <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="stat-circle">
-                    <i class="bi bi-people"></i>
-                  </div>
-                  <div class="stat-info">
-                    <span class="stat-number">30+</span>
-                    <span class="stat-label">Happy Clients</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills-badges" data-aos="fade-up" data-aos-delay="600">
-                <h4>Certifications</h4>
+              <h3>What I Work With</h3>
+              <p>I build server-side web applications with PHP and Laravel on top of MySQL, and I use Git for version control. I am also learning cloud and DevOps tools such as AWS and Docker.</p>
+              <div class="skills-badges">
+                <h4>Tech Stack</h4>
                 <div class="badge-list">
-                  <div class="skill-badge">AWS Certified</div>
-                  <div class="skill-badge">Laravel Expert</div>
-                  <div class="skill-badge">Vue.js Developer</div>
-                  <div class="skill-badge">UI/UX Design</div>
+                  <div class="skill-badge">PHP</div>
+                  <div class="skill-badge">Laravel</div>
+                  <div class="skill-badge">MySQL</div>
+                  <div class="skill-badge">JavaScript</div>
+                  <div class="skill-badge">Python</div>
+                  <div class="skill-badge">Java</div>
+                  <div class="skill-badge">C</div>
+                  <div class="skill-badge">Excel</div>
+                  <div class="skill-badge">Git</div>
+                  <div class="skill-badge">Docker</div>
+                  <div class="skill-badge">AWS</div>
                 </div>
               </div>
             </div><!-- End Skills Summary -->
@@ -452,364 +443,151 @@
     <!-- Resume Section -->
     <section id="resume" class="resume section">
 
-      <!-- Section Title -->
       <div class="container section-title">
         <h2>Resume</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <p>Work experience, organizations and education.</p>
+      </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
+      <div class="container">
         <div class="row">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+          <div class="col-lg-6">
             <div class="experience-section">
-              <div class="section-header">
-                <h2><i class="bi bi-briefcase"></i> Professional Journey</h2>
-                <p class="section-subtitle">Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                  ac turpis egestas vestibulum tortor quam.</p>
-              </div>
-
+              <div class="section-header "><h2><i class="bi bi-briefcase"></i> Work Experience</h2><p class="section-subtitle">Hands-on experience in data handling and application development.</p></div>
               <div class="experience-cards">
-                <div class="experience-card" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="card-header">
-                    <div class="role-info">
-                      <h3>Technical Director</h3>
-                      <h4>Proin Corporation</h4>
-                    </div>
-                    <span class="duration">2022 - Present</span>
-                  </div>
-                  <div class="card-body">
-                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris
-                      viverra veniam sit amet lacus cursus.</p>
-                    <ul class="achievements">
-                      <li>Managed cross-functional teams of 15+ professionals</li>
-                      <li>Implemented agile methodologies resulting in 40% efficiency gain</li>
-                      <li>Led digital transformation initiatives worth $2M+</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="experience-card" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="card-header">
-                    <div class="role-info">
-                      <h3>Senior Development Manager</h3>
-                      <h4>Consectetur Solutions Inc</h4>
-                    </div>
-                    <span class="duration">2018 - 2022</span>
-                  </div>
-                  <div class="card-body">
-                    <p>Donec quam felis ultricies nec pellentesque eu pretium quis sem nulla consequat massa quis enim
-                      donec pede justo fringilla vel.</p>
-                  </div>
-                </div>
-
-                <div class="experience-card" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="card-header">
-                    <div class="role-info">
-                      <h3>Product Development Specialist</h3>
-                      <h4>Adipiscing Technologies</h4>
-                    </div>
-                    <span class="duration">2015 - 2018</span>
-                  </div>
-                  <div class="card-body">
-                    <p>Nam quam nunc blandit vel luctus pulvinar hendrerit id lorem maecenas nec odio et ante tincidunt
-                      tempus donec vitae sapien ut.</p>
-                  </div>
-                </div>
+                <div class="experience-card" data-aos="fade-up"><div class="card-header"><div class="role-info"><h3>Intern</h3><h4>Dinas Pertanian dan Ketahanan Pangan Kabupaten Karawang</h4></div><span class="duration">Aug 2025 – Dec 2025</span></div><div class="card-body"><ul class="achievements"><li>Built a livestock data application to record farm, health and birth data in a structured way.</li><li>Entered field report data into the existing system, keeping records complete and accurate.</li><li>Joined field visits and on-site checks to understand local needs and verify data accuracy.</li></ul></div></div>
+                <div class="experience-card" data-aos="fade-up"><div class="card-header"><div class="role-info"><h3>Cooperative Administrator</h3><h4>Pondok Pesantren Baitul Burhan</h4></div><span class="duration">Feb 2021 – Jun 2023</span></div><div class="card-body"><ul class="achievements"><li>Recorded and audited students’ daily pocket money in Excel to keep financial records accurate.</li><li>Managed cooperative stock (uniforms, clothing, stationery, daily necessities) so items stayed available.</li><li>Recorded the foundation’s income and expenses as part of its admin team.</li></ul></div></div>
+                
+              </div>
+              <div class="section-header org-header"><h2><i class="bi bi-people"></i> Organizations</h2><p class="section-subtitle">Leadership and teamwork outside the classroom.</p></div>
+              <div class="experience-cards">
+                <div class="experience-card" data-aos="fade-up"><div class="card-header"><div class="role-info"><h3>Head of Racana Council (KDR)</h3><h4>UKM Pramuka</h4></div><span class="duration">Jan 2026 – Present</span></div><div class="card-body"><ul class="achievements"><li>Lead and coordinate all organizational activities.</li><li>Chair meetings and draft work programs with the Racana Council.</li><li>Assign tasks and evaluate member performance.</li><li>Manage internal affairs and relations with other organizations.</li></ul></div></div>
+                <div class="experience-card" data-aos="fade-up"><div class="card-header"><div class="role-info"><h3>University Unit Coordinator</h3><h4>IKMABABUR</h4></div><span class="duration">Oct 2026 – Present</span></div><div class="card-body"><ul class="achievements"><li>Coordinate and liaise between members of the university unit and the central coordinator.</li></ul></div></div>
+                
               </div>
             </div>
           </div>
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+          <div class="col-lg-6">
             <div class="education-section">
-              <div class="section-header">
-                <h2><i class="bi bi-mortarboard"></i> Academic Excellence</h2>
-                <p class="section-subtitle">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo
-                  ligula eget dolor aenean massa.</p>
-              </div>
-
+              <div class="section-header "><h2><i class="bi bi-mortarboard"></i> Education</h2><p class="section-subtitle">Formal education.</p></div>
               <div class="education-timeline">
                 <div class="timeline-track"></div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="300">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>Master of Computer Science</h3>
-                      <span class="year">2015 - 2017</span>
-                    </div>
-                    <h4 class="institution">Tempus University</h4>
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec quam
-                      felis ultricies nec.</p>
-                  </div>
-                </div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="400">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>Bachelor of Information Technology</h3>
-                      <span class="year">2011 - 2015</span>
-                    </div>
-                    <h4 class="institution">Rhoncus Institute of Technology</h4>
-                    <p>Nullam dictum felis eu pede mollis pretium integer tincidunt cras dapibus vivamus elementum
-                      semper nisi aenean vulputate.</p>
-                  </div>
-                </div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="500">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>Certificate in Digital Innovation</h3>
-                      <span class="year">2020</span>
-                    </div>
-                    <h4 class="institution">Ligula Academy</h4>
-                    <p>Etiam sit amet orci eget eros faucibus tincidunt duis leo sed fringilla mauris sit amet nibh
-                      donec sodales sagittis magna.</p>
-                  </div>
-                </div>
+                <div class="education-item" data-aos="fade-up"><div class="timeline-marker"></div><div class="education-content"><div class="degree-header"><h3>Informatics Engineering (Teknik Informatika)</h3><span class="year">2023 – 2027</span></div><h4 class="institution">Universitas Buana Perjuangan Karawang</h4><p>Active student focusing on technology and web development.</p></div></div>
+                <div class="education-item" data-aos="fade-up"><div class="timeline-marker"></div><div class="education-content"><div class="degree-header"><h3>Science Track (IPA)</h3><span class="year">2020 – 2023</span></div><h4 class="institution">MA Fathanul Burhan</h4><p>Senior high school.</p></div></div>
+                
               </div>
+              <div class="section-header org-header"><h2><i class="bi bi-person-check"></i> Soft Skills</h2><p class="section-subtitle">Languages: English. Interests: hiking and automotive.</p></div>
+              <ul class="chip-list"><li>Communication</li><li>Leadership</li><li>Teamwork</li><li>Adaptability</li><li>Problem solving</li><li>Time management</li><li>Responsibility</li><li>Initiative</li></ul>
             </div>
           </div>
         </div>
-
       </div>
 
     </section><!-- /Resume Section -->
 
-    <!-- Portfolio Section -->
+    <!-- Projects Section -->
     <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
       <div class="container section-title">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-            <li data-filter="*" class="filter-active">
-              <i class="bi bi-grid-3x3"></i> All Projects
-            </li>
-            <li data-filter=".filter-ui">
-              UI/UX
-            </li>
-            <li data-filter=".filter-development">
-              Development
-            </li>
-            <li data-filter=".filter-photography">
-              Photography
-            </li>
-            <li data-filter=".filter-marketing">
-              Marketing
-            </li>
-          </ul>
-
-          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">UI/UX Design</div>
-                      <h3 class="entry-title">Mobile Banking App</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox"
-                          data-gallery="portfolio-gallery-ui"
-                          data-glightbox="title: Mobile Banking App; description: Praesent commodo cursus magna, vel scelerisque nisl consectetur.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Development</div>
-                      <h3 class="entry-title">E-Learning Platform</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-10.webp" class="glightbox"
-                          data-gallery="portfolio-gallery-development"
-                          data-glightbox="title: E-Learning Platform; description: Nulla vitae elit libero, a pharetra augue mollis interdum.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Photography</div>
-                      <h3 class="entry-title">Urban Architecture</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox"
-                          data-gallery="portfolio-gallery-photography"
-                          data-glightbox="title: Urban Architecture; description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Marketing</div>
-                      <h3 class="entry-title">Social Media Campaign</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox"
-                          data-gallery="portfolio-gallery-marketing"
-                          data-glightbox="title: Social Media Campaign; description: Quis autem vel eum iure reprehenderit qui in ea voluptate.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">UI/UX Design</div>
-                      <h3 class="entry-title">Smart Home Interface</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox"
-                          data-gallery="portfolio-gallery-ui"
-                          data-glightbox="title: Smart Home Interface; description: At vero eos et accusamus et iusto odio dignissimos ducimus.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Development</div>
-                      <h3 class="entry-title">Cloud Management System</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-11.webp" class="glightbox"
-                          data-gallery="portfolio-gallery-development"
-                          data-glightbox="title: Cloud Management System; description: Temporibus autem quibusdam et aut officiis debitis.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Photography</div>
-                      <h3 class="entry-title">Nature Collection</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-8.webp" class="glightbox"
-                          data-gallery="portfolio-gallery-photography"
-                          data-glightbox="title: Nature Collection; description: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Marketing</div>
-                      <h3 class="entry-title">Brand Strategy</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox"
-                          data-gallery="portfolio-gallery-marketing"
-                          data-glightbox="title: Brand Strategy; description: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
+        <h2>Projects</h2>
+        <p>Selected work. The full list is on my GitHub.</p>
       </div>
 
-    </section><!-- /Portfolio Section -->
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <!-- To add a project, copy one card below and edit its text and links. -->
+          <div class="col-lg-4 col-md-6">
+            <article class="project-card">
+              <a class="project-thumb zoomable" href="assets/img/projects/livestock-app.jpg" data-title="Livestock Data Application"><img src="assets/img/projects/livestock-app.jpg" alt="Screenshot of Livestock Data Application" loading="lazy"></a>
+              <span class="project-tag">Internship Project</span>
+              <h3>Livestock Data Application</h3>
+              <p>An application that records livestock, health and birth data in a structured way, built during my internship at the Karawang Department of Agriculture and Food Security (Aug – Dec 2025).</p>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <article class="project-card">
+              <a class="project-thumb zoomable" href="assets/img/projects/portfolio-site.jpg" data-title="MyPortfolio"><img src="assets/img/projects/portfolio-site.jpg" alt="Screenshot of MyPortfolio" loading="lazy"></a>
+              <span class="project-tag">Web Development</span>
+              <h3>MyPortfolio</h3>
+              <p>This responsive personal portfolio, built with HTML, CSS, JavaScript and Bootstrap and hosted from a Git repository.</p>
+              <ul class="project-stack"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li></ul>
+              <a class="project-link" href="https://github.com/aburizalalhafidzif23g/MyPortfolio" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <article class="project-card">
+              <span class="project-tag">GitHub</span>
+              <h3>More projects</h3>
+              <p>My backend and web development projects, including coursework and experiments, are published in my repositories.</p>
+              <a class="project-link" href="https://github.com/aburizalalhafidzif23g" target="_blank" rel="noopener noreferrer">Browse my repositories</a>
+            </article>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Projects Section -->
+
+    <section id="certificates" class="certificates section">
+
+      <div class="container section-title">
+        <h2>Certificates</h2>
+        <p>Training and certificates I have completed.</p>
+      </div>
+
+      <div class="container">
+        <div class="row g-4">
+          <!-- To add one: copy a card and put the certificate image in assets/img/certificates/ (name it like the file in the card). -->
+          <div class="col-lg-4 col-md-6">
+            <article class="cert-card">
+              <a class="cert-thumb zoomable" href="assets/img/certificates/huawei-ai.png" data-title="Artificial Intelligence Technology and Application"><img src="assets/img/certificates/huawei-ai.png" alt="Certificate: Artificial Intelligence Technology and Application" loading="lazy"></a>
+              <span class="cert-issuer">Huawei</span>
+              <h3>Artificial Intelligence Technology and Application</h3>
+              <p>Training</p>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <article class="cert-card">
+              <a class="cert-thumb zoomable" href="assets/img/certificates/google-it-automation-python.jpg" data-title="Google IT Automation with Python"><img src="assets/img/certificates/google-it-automation-python.jpg" alt="Certificate: Google IT Automation with Python" loading="lazy"></a>
+              <span class="cert-issuer">Coursera</span>
+              <h3>Google IT Automation with Python</h3>
+              <p>Professional Certificate</p>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <article class="cert-card">
+              <a class="cert-thumb zoomable" href="assets/img/certificates/dicoding-c.jpg" data-title="Memulai Pemrograman dengan C"><img src="assets/img/certificates/dicoding-c.jpg" alt="Certificate: Memulai Pemrograman dengan C" loading="lazy"></a>
+              <span class="cert-issuer">Dicoding</span>
+              <h3>Memulai Pemrograman dengan C</h3>
+              <p>Certificate</p>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <article class="cert-card">
+              <a class="cert-thumb zoomable" href="assets/img/certificates/dicoding-manajemen-proyek.jpg" data-title="Belajar Dasar Manajemen Proyek"><img src="assets/img/certificates/dicoding-manajemen-proyek.jpg" alt="Certificate: Belajar Dasar Manajemen Proyek" loading="lazy"></a>
+              <span class="cert-issuer">Dicoding</span>
+              <h3>Belajar Dasar Manajemen Proyek</h3>
+              <p>Certificate</p>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <article class="cert-card">
+              <a class="cert-thumb zoomable" href="assets/img/certificates/dicoding-java.jpg" data-title="Memulai Pemrograman dengan Java"><img src="assets/img/certificates/dicoding-java.jpg" alt="Certificate: Memulai Pemrograman dengan Java" loading="lazy"></a>
+              <span class="cert-issuer">Dicoding</span>
+              <h3>Memulai Pemrograman dengan Java</h3>
+              <p>Certificate</p>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <article class="cert-card">
+              <a class="cert-thumb zoomable" href="assets/img/certificates/webinar-ai-matematika-islam.jpg" data-title="Kecerdasan Artifisial, Matematika, &amp; Islam: Menggali Hikmah di Era Digital"><img src="assets/img/certificates/webinar-ai-matematika-islam.jpg" alt="Certificate: Kecerdasan Artifisial, Matematika, & Islam: Menggali Hikmah di Era Digital" loading="lazy"></a>
+              <span class="cert-issuer">Webinar Nasional</span>
+              <h3>Kecerdasan Artifisial, Matematika, &amp; Islam: Menggali Hikmah di Era Digital</h3>
+              <p>Webinar</p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Certificates Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
@@ -817,7 +595,7 @@
       <!-- Section Title -->
       <div class="container section-title">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Have a question or an opportunity? Send me a message.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -826,74 +604,44 @@
           <div class="col-lg-5">
             <div class="info-box" data-aos="fade-up" data-aos-delay="200">
               <h3>Contact Info</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.
-              </p>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
-                <div class="content">
-                  <h4>Our Location</h4>
-                  <p>Kp. Pagadungan, Sukasari</p>
-                  <p>West Java, Indonesia</p>
-                </div>
-              </div>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box">
-                  <i class="bi bi-telephone"></i>
-                </div>
-                <div class="content">
-                  <h4>Phone Number</h4>
-                  <p>085777915663</p>
-                </div>
-              </div>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="icon-box">
-                  <i class="bi bi-envelope"></i>
-                </div>
-                <div class="content">
-                  <h4>Email Address</h4>
-                  <p>aburizal123@gmail.com</p>
-                </div>
-              </div>
+              <p>I am open to internships and collaboration on web and backend projects.</p>
+              <div class="info-item"><div class="icon-box"><i class="bi bi-geo-alt"></i></div><div class="content"><h4>Location</h4><p>Karawang, West Java, Indonesia</p></div></div>
+              <div class="info-item"><div class="icon-box"><i class="bi bi-telephone"></i></div><div class="content"><h4>Phone</h4><p><a href="tel:+6285777915663">0857-7791-5663</a></p></div></div>
+              <div class="info-item"><div class="icon-box"><i class="bi bi-whatsapp"></i></div><div class="content"><h4>WhatsApp</h4><p><a href="https://wa.me/6285777915663" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></p></div></div>
+              <div class="info-item"><div class="icon-box"><i class="bi bi-envelope"></i></div><div class="content"><h4>Email Address</h4><p><a href="mailto:aburizal4771@gmail.com">aburizal4771@gmail.com</a></p></div></div>
             </div>
           </div>
 
           <div class="col-lg-7">
             <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
               <h3>Get In Touch</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.
-              </p>
+              <p>Fill in the form and your message will be delivered straight to my email.</p>
 
-              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-                data-aos-delay="200">
+              <form id="contact-form" class="php-email-form" data-access-key="ab72e7a4-a0fd-444b-87a8-03501369649b" novalidate data-aos="fade-up" data-aos-delay="200">
+                <input type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off">
                 <div class="row gy-4">
 
                   <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" aria-label="Your Name" autocomplete="name" maxlength="120" required="">
                   </div>
 
                   <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" aria-label="Your Email" autocomplete="email" maxlength="120" required="">
                   </div>
 
                   <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" aria-label="Subject" autocomplete="off" maxlength="120" required="">
                   </div>
 
                   <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" aria-label="Message" maxlength="2000" required=""></textarea>
                   </div>
 
                   <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    <div class="error-message" role="alert"></div>
+                    <div class="sent-message" role="status">Your email app should now open with your message ready to send.</div>
 
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn">Send message</button>
                   </div>
 
                 </div>
@@ -914,13 +662,13 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Style</strong> <span>All Rights Reserved</span></p>
+        <p>© 2026 <strong class="px-1 sitename">Abu Rizal Alhafidz</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://twitter.com/aburizal4771" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/aburizalalhafidz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+        <a href="https://github.com/aburizalalhafidzif23g" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/aburizal4771" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -933,24 +681,23 @@
 
   </footer>
 
+  <div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header"><h5 class="modal-title"></h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        <div class="modal-body text-center"><img class="img-fluid" alt=""></div>
+      </div>
+    </div>
+  </div>
+
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i
+      class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/typed.js/typed.umd.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 
