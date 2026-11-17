@@ -3093,3 +3093,13 @@ section,
 .header .lang-switch button { color: #fff; border-color: rgba(255,255,255,.55); background: transparent; }
 .header .lang-switch button:hover { background: rgba(255,255,255,.2); color: #fff; border-color: #fff; }
 .header .lang-switch button.active, .header .lang-switch button.active:hover { background: var(--accent-color); border-color: var(--accent-color); color: #fff; }
+
+/* Show whole certificate / screenshot (no cropping) and keep popup images inside the screen */
+.cert-thumb, .project-thumb { background: #f1f5fb; }
+.cert-thumb img, .project-thumb img { object-fit: contain; background: #f1f5fb; }
+#imgModal .modal-body img { max-height: 78vh; width: auto; max-width: 100%; object-fit: contain; }
+
+/* GitHub visual for the "More projects" card */
+.project-thumb--icon { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; aspect-ratio: 16 / 10; cursor: default; color: #fff; background: linear-gradient(135deg, #124280, #065cc2); }
+.project-thumb--icon i { font-size: 56px; line-height: 1; }
+.project-thumb--icon span { font-size: 14px; opacity: .9; }
